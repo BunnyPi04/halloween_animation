@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="spider-web-1">
+        <img class="w-100" src="images/spider_web_1.png">
+    </div>
+    <div class="spider-web-3">
+        <img class="w-100" src="images/spider_web_2.png">
+    </div>
+    <div class="spider-web-4">
+        <img class="w-100" src="images/spider_web_2.png">
+    </div>
+    <div class="spider-web-5">
+        <img class="w-100" src="images/spider_web_1.png">
+    </div>
+    <div class="spider-web-6">
+        <img class="w-100" src="images/spider_web_2.png">
+    </div>
+    <div class="pumpkin-1">
+        <img class="w-100" src="images/pumpkin.png">
+    </div>
+    <div class="happy">Happy</div>
+    <div class="text">
+        <ul>
+            <li>H</li>
+            <li>A</li>
+            <li>l</li>
+            <li>l</li>
+            <li>o</li>
+            <li>w</li>
+            <li>e</li>
+            <li>e</li>
+            <li>n</li>
+        </ul>
+    </div>
+    <div class="spider">
+        <img class="w-100" src="images/spider.png">
+    </div>
+    <div class="spider-web-2">
+        <img class="w-100" src="images/spider_web_1.png">
+    </div>
+    <div class="mimikyu">
+        <img class="w-100 mimikyu-img" src="images/mimikyu.png">
+    </div>
+    <div class="ghost">
+        <img class="w-100" src="images/ghost.png">
+    </div>
+    <div class="pikachu">
+        <img class="w-100" src="images/pikachu.png">
+    </div>
+    <div class="pumpkin-2">
+        <img class="w-100" src="images/pumpkin.png">
+    </div>
+    <div class="pumpkin-3">
+        <img class="w-100" src="images/mimikyu_pumpkin.png">
+    </div>
+    <div class="bat">
+        <img class="w-100" src="images/bat.png">
+    </div>
+    <div class="bat-2">
+        <img src="images/bat.png">
+        <img src="images/bat.png">
+    </div>
+    <div class="author">animation by bunny_pi +</div>
+</body>
+<style type="text/css">
+    @font-face {
+        font-family: 'Tanuki';
+        src: url('fonts/iCielTanuki-Regular.otf');
+    }
+    @font-face {
+        font-family: 'BrushUp';
+        src: url('fonts/iCiel Brush Up.otf');
+    }
+    @font-face {
+        font-family: 'DaddysGirl';
+        src: url('fonts/UVF Daddys Girl.ttf');
+    }
+    body {
+        margin: 0 auto;
+        background-color: #5a3381;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .w-100 {
+        width: 100%;
+    }
+    .spider-web-1 {
+        position: absolute;
+        width: 30%;
+        transform: translate(-20%, -40%);
+    }
+    .spider-web-2 {
+        position: absolute;
+        width: 40%;
+        right: -6%;
+        top: -32%;
+    }
+    .spider-web-3 {
+        position: absolute;
+        width: 10%;
+        right: 35%;
+        top: 12%;
+    }
+    .spider-web-4 {
+        position: absolute;
+        width: 10%;
+        left: 15%;
+        top: 32%;
+    }
+    .spider-web-5 {
+        position: absolute;
+        width: 20%;
+        top: 57%;
+        left: 3%;
+    }
+    .spider-web-6 {
+        position: absolute;
+        width: 18%;
+        top: 60%;
+        right: 15%;
+    }
+    .spider {
+        position: absolute;
+        transform-origin: center top;
+        animation: spiderMove 1s infinite;
+        width: 8%;
+        left: 22%;
+    }
+    .spider:hover {
+        transform: scale(1.3);
+    }
+    .pumpkin-1 {
+        position: absolute;
+        width: 13%;
+        left: 5%;
+        bottom: 1%;
+    }
+    .mimikyu {
+        position: absolute;
+        width: 22%;
+        left: 22%;
+        bottom: 15%;
+    }
+    .mimikyu-img {
+        transform-origin: center bottom;
+        animation: mimikyuMove 1.5s infinite;
+    }
+    .mimikyu:before {
+        content: '';
+        border-radius: 50%;
+        background-color: #5f6769;
+        position: absolute;
+        bottom: -20%;
+        width: 95%;
+        height: 10%;
+        transform-origin: center bottom;
+        animation: kageMove 1.5s infinite;
+    }
+    .ghost {
+        position: absolute;
+        width: 31%;
+        right: 18%;
+        bottom: 7%;
+        animation: ghostMove 5s infinite;
+    }
+    .pikachu {
+        position: absolute;
+        width: 23%;
+        right: 20%;
+        bottom: 3%;
+    }
+    .pumpkin-2 {
+        position: absolute;
+        width: 10%;
+        right: 15%;
+        bottom: 8%;
+    }
+    .pumpkin-3 {
+        position: absolute;
+        width: 12%;
+        right: 9%;
+        bottom: 4%;
+    }
+    .bat {
+        position: absolute;
+        animation: batMove 3.5s infinite;
+        transition-delay: 2s;
+        width: 18%;
+        right: 0%;
+        top: 0;
+    }
+    .bat-2 {
+        position: absolute;
+        width: 15%;
+        transition: all 3s ease-in-out;
+        transform: scaleX(-1);
+        left: 0;
+        bottom: 0;
+        animation: batMoveS 7s infinite;
+    }
+    .bat-2>img:nth-child(1) {
+        width: 50%;
+    }
+    .bat-2>img:nth-child(2) {
+        width: 30%;
+    }
+    .happy {
+        text-transform: uppercase;
+        font-family: 'BrushUp';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+        font-weight: bold;
+        color: #fef3cb;
+    }
+    .text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 18%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text ul {
+        display: flex;
+    }
+    .text ul li {
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 130px;
+        color: #ee802b;
+        font-weight: bold;
+        opacity: 1;
+        transition: 5s;
+        transform: scale(1);
+        font-family: 'Tanuki';
+        letter-spacing: 10px;
+    }
+    .text ul:hover li {
+        /*transform: rotate(45deg) translateY(-200px);*/
+        transform: scale(3);
+        opacity: 0;
+        filter: blur(200px);
+    }
+    .author {
+        font-family: 'DaddysGirl';
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 5%;
+        color: wheat;
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+    }
+
+    @keyframes spiderMove {
+        0% {
+            transform: translateY(-10%) rotate(2deg);
+        }
+        50% {
+            transform: translateY(0%) rotate(2deg);
+        }
+        100% {
+            transform: translateY(-10%) rotate(2deg);
+        }
+    }
+    @keyframes mimikyuMove {
+        0% {
+            transform: translateY(0%);
+        }
+        50% {
+            transform: translateY(10%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+    @keyframes kageMove {
+        0% {
+            transform: scaleX(0.9);
+        }
+        50% {
+            transform: scaleX(1)
+        }
+        100% {
+            transform: scaleX(0.9);
+        }
+    }
+    @keyframes batMove {
+        0% {
+            transform: translate(200%, 200%) scale(1.5);
+        }
+        100% {
+            transform: translate(-200%, -100%) scale(0.6);
+        }
+    }
+    @keyframes ghostMove {
+        0% {
+            transform: translate(0, 0) scale(0.9);
+            opacity: 0.3;
+        }
+        50% {
+            transform: translate(-12%, -12%) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(0, 0) scale(0.9);
+            opacity: 0.3;
+        }
+    }
+    @keyframes batMoveS {
+        0% {
+            transform: translate(-100%, 100%) scaleX(-1);
+        }
+        100% {
+            transform: translate(900%, -600%) scaleX(-1);
+        }
+    }
+</style>
+</html>
